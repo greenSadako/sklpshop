@@ -1,5 +1,3 @@
-/*  как только подключила бустрап, в хедер добавилось 10пх, паддинг у контейнера 0 ничего не меняет, откуда-то взялось 10 лишних пикселей у row
- */
 body{
     background-image: url(patt.png);
     font-family: 'Roboto', sans-serif;
@@ -7,25 +5,20 @@ body{
 *{
     box-sizing: border-box;
     color: #2c71b8;
+    
 }
 header{
     width: 100%;
     background: rgba(255, 255, 255, 0.8);
     padding: 25px 0;
 }
-.container{
-    
+.wrapper{
+    width: 1176px;
     margin: 0 auto;
-    padding: 0;
     
 }
-[class*="col-md-"]{
+.column{
     float: left;
-    padding: 0;
-}
-.row{
-    margin: 0;
-    padding: 0;
 }
 .row::after{
     content: "";
@@ -36,12 +29,12 @@ header{
     margin-top: 5px;
     
 }
-/* .col-3{
+.col-3{
     width: 25%;
 }
 .col-6{
     width: 50%;
-} */
+}
 .menu > li{
     float: left;
     width: 25%;
@@ -69,8 +62,8 @@ header{
 	font-size: 21px;
 }
 .menu li a:hover{
-	background: #2c71b8;
 	color: white;
+    background: #2c71b8;
 }
 .menu li a:hover i{
     color: white;
@@ -79,10 +72,10 @@ header{
 .menu li:first-child{
 	border-left: 1px solid #2c71b8;
 }
-/* .col-75{
+.col-75{
     width: 75%;
-    padding-left: 30px;
-} */
+    
+}
 
 #search {
     float: left;
@@ -90,8 +83,6 @@ header{
     padding-left: 20px;
     background-color: #cadbed;
     border: 1px solid #2c71b8;
-    font-size: 14px;
-    width: 192px;
 }
 
 #input-div {
@@ -175,8 +166,6 @@ header{
     background-color: #2c71b8;
     
 }
-
-
 .submenu li:first-child{
     padding-top: 16px;
 }
@@ -185,23 +174,23 @@ header{
 }
 .submenu li a{
     color: white;
+    background-color: #2c71b8;
     padding-left: 35px;
     font-size: 21px;
     text-align: left;
     line-height: 40px;
-    display: block;
 }
 .submenu li a:hover{
     background-color: white;
     color: #2c71b8;
 
 }
+
 /*
  #submenu li a:first-child {
     padding-top: 30px;
 } 
 */
-
 
 
  .menu li:hover>ul {
@@ -213,4 +202,335 @@ header{
 .color-blue{
     background-color: #2c71b8;
     color: white;
+}
+.slider{
+    height: 400px;
+} 
+
+
+
+.col-12{
+    width: 100%;
+}
+.col-66{
+    width: 66%;
+}
+.col-33{
+     
+    width: 33%;
+    padding-left: 26px;
+    margin-bottom: 30px;
+}
+.path{
+    float: left;
+    padding-left: 30px;
+   
+}
+h1{
+    font-size: 40px;
+    color: white;
+     padding-bottom: 50px;
+    padding-left: 30px;
+    font-weight: 700;
+}
+p {
+    font-size: 14px;
+    color: white;
+}
+p a{
+    color: white;
+    text-decoration: none;
+}
+.path{
+    padding-top: 30px;
+    
+    padding-bottom: 30px;
+    float: left;
+}
+.path p{
+    display: inline;
+}
+
+
+
+#sort{
+    width: 267px;
+}
+.product-holder{
+    float: left;
+    border: 1px solid white;
+    
+}
+.focus-holder{
+    background-image: url(img/focus.png);
+    background-repeat: no-repeat;
+    border: 1px solid #2c71b8;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+.fav-holder{
+     background-image: url(img/fav.png);
+    background-repeat: no-repeat;
+    border: 1px solid #2c71b8;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    
+}
+
+.product-image{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    width: 270px;
+    height: 180px;
+}
+.product-image img{
+    margin: 0;
+    position: absolute;;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+.product-info{
+    float: left;
+    padding-left: 12px;
+    
+}
+
+h2{
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    
+}
+
+.black{
+    background-color: black;
+}
+
+.price-holder{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.f-price-holder{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.price{
+    font-size: 48px;
+    font-weight: bold;
+    
+}
+.info{
+    font-size: 21px;
+}
+.buttons-block{
+    margin-left: -12px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 26px;
+    font-size: 21px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    
+}
+.details-button{
+    width: 209px;
+}
+.cart-button{
+    margin-bottom: 30px;
+    margin-top: 15px;
+    position: relative;
+    padding-right: 40px;
+    background: rgba(238, 130, 238, .2)
+}
+.cart-block{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/white-cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 10px;
+    top: 10px;
+}
+#sort{
+    background: none;
+    font-size: 21px;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    border: 1px solid white;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+.sort-holder{
+    position: relative;
+}
+.arrow-holder{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.arrow-holder i{
+    color: white;
+    transition: .5s;
+}
+
+#underlined{
+    text-decoration: underline;
+}
+.sub-sort{
+    position: absolute;
+    background-color: #2c71b8;
+    width: 200px;
+    top: 48px;
+    z-index: 1;
+    width: 100%;
+    left: 2px;
+    display: none;
+}
+.sub-sort li{
+    background-color: #2c71b8;
+}
+
+.sub-sort li a{
+    color: white;
+    background-color: #2c71b8;
+    padding-left: 35px;
+    font-size: 21px;
+    text-align: left;
+    line-height: 40px;
+    display: block;
+    text-decoration: none;
+    
+}
+.sub-sort li a:hover{
+    background-color: white;
+    color: #2c71b8;
+    
+
+}
+.sort-holder:hover>form>div:first-child{
+    display: block;
+}
+.sort-holder:hover>form>div:nth-child(2)>i{
+    transform: scale(1.5)
+}
+.catalog{
+    border-top: 1px solid white;
+}
+
+/*
+.menu li:hover>ul {
+    display: block;
+}*/
+b{
+    color: white;
+    font-weight: 800;
+}
+sup {
+    font-size:24px; 
+    vertical-align:super;
+    color: white;
+}
+.load{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 90px;
+}
+.focus-holder{
+    background-color: #2c71b8;
+}
+.checkbox-form{
+    background: rgba(238, 130, 238, .2);
+    border-right: 1px solid white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.checkbox-form>form>h3{
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    
+}
+
+.checkbox-form>form>div>label{
+    color: white;
+}
+input[type="checkbox"]{
+    display: none;
+}
+label{
+    position: relative;
+    margin-left: 50px;
+    font-size: 21px;
+    font-weight: 300;
+    display: block;
+    margin-top: 23px;
+}
+label:before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: none;
+    position: absolute;
+    top: 6px;
+    left: -20px;
+    border: 1px solid white;
+}
+input:checked+label:before{
+    background-color: white;
+}
+.checkbox-header{
+    margin-top: 60px;
+}
+#checkbox-options{
+    text-align: center;
+    margin-top: 30px;
+}
+#checkbox-options>p{
+font-size: 21px;
+    font-weight: 300;
+}
+
+.fav-blue{
+    background-color: blue;
+    background-image: url(img/white-fav.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }

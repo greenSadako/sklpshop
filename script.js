@@ -51,3 +51,10 @@ function removeClass(submenuItem){
 }
 
 //classList.toggle!
+var favs = document.getElementsByClassName("fav-holder");
+for (k=0; k<favs.length; k++){
+  favs[k].addEventListener("click", changeColor);
+}
+function changeColor(){
+  this.classList.toggle("color-blue");
+}

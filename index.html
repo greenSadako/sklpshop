@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    
-
 </head>
 <body>
    <header>
-       <div class="container">
+       <div class="wrapper">
           <div class="row">
-           <div class="col-md-3 col-xs-12">
+           <div class="column col-3">
            	<div class="logo-holder"><a href="/"><img src="logo.png" alt="logo"></a></div>
           	 </div>
-           <div class="col-md-6 col-xs-12">
+           <div class="column col-6">
                <nav>
                 <ul class="menu">
                    <li><a href="#">Home</a></li>
@@ -39,9 +36,8 @@
                  </ul>
                </nav>
            </div>
-           <div class="col-md-3">
-               <div class="row">
-                <div class="col-md-9">
+           <div class="column col-3">
+                <div class="column col-75">
                     <div id="input-div">
                         <form action="POST">
                              <input type="search" id="search" placeholder="search">
@@ -49,8 +45,8 @@
                          <div id="search-icon-holder"></div>
                      </div>
                 </div>
-                 <div class="col-md-3">
-                   
+                 <div class="column col-3">
+                   <div class="row">
                     <div id="basket-icon-holder">
                       <div id="number"> 0</div>
                       </div>
@@ -60,6 +56,323 @@
            </div>
         </div>
    </header>
+   <main>
+       <section class="slider">
+           
+       </section>
+       <section class="catalog">
+          <div class="wrapper">
+           <div class="row">
+               <div class="column col-3 form"> 
+               <div class="checkbox-form">
+                 
+                   <form action="POST">
+                       <h3>DEVICE TYPE</h3>
+                       <div>
+                       <input type="checkbox" name="device-type" value="laptop" id="laptop">
+                       <label for="laptop">Laptop</label>
+                       </div>
+                       <div>
+                       <input type="checkbox" name="device-type" value="tablet" id="tablet">
+                       <label for="tablet">Tablet</label>
+                       </div>
+                   </form>
+                    <form action="POST">
+                        <h3 class="checkbox-header">COLOR</h3>
+                        <div>
+                        <input type="checkbox" name="device-color" value="black" id="black">
+                        <label for="black">Black</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" name="device-color" value="red" id="red">
+                        <label for="red">Red</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" name="device-color" value="green" id="green">
+                        <label for="green">Green</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" name="device-color" value="blue" id="blue">
+                        <label for="blue"> Blue</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" name="device-color" value="orange" id="orange">
+                        <label for="orange">Orange</label>
+                        </div>
+                    </form>
+                    <form action="POST">
+                        <h3 class="checkbox-header">RAM</h3>
+                        <div>
+                        <input type="checkbox" name="device-memory" value="1GB" id="1GB">
+                        <label for="1GB">1GB</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" name="device-memory" value="2GB" id="2GB">
+                        <label for="2GB">2GB</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" name="device-memory" value="4GB" id="4GB">
+                        <label for="4GB">4GB</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" name="device-memory" value="6GB" id="6GB">
+                        <label for="6GB">6GB</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" name="device-memory" value="8GB" id="8GB">
+                        <label for="8GB">8GB</label>
+                        </div>
+                    </form>
+                   <div id="checkbox-options"><p>Show more options...</p></div>
+                   <div class="buttons-block">
+                              <button class="details-button submit">SUBMIT</button>
+
+                  </div>
+                   
+               </div>
+               
+               </div>
+               <div class="column col-75">
+            <div class="row">
+                  
+                   <div class="column col-12">
+                      <div class="path">
+                          <p><a href="#">Home page ></a><a href="#">Products ></a><p id="underlined">Laptops and tablets</p>
+                      </div>
+                       
+                   </div>
+                   </div>
+               
+               <div class="row">
+                  <div class="column col-66">
+                      <h1>Laptops and Tablets</h1>
+                  </div>
+                   <div class="column col-33">
+                       <div class="sort-holder" >
+                           <form action="">
+                             <div class="sub-sort"><ul>
+                             <li><a href="">sort by name</a></li>
+                             <li><a href="">sort by date</a></li>
+                             <li><a href="">sort by popularity</a></li></ul></div>
+                              <div class="arrow-holder"><i class="fas fa-caret-down"></i></div>
+                               <input type="text" id="sort" placeholder="sort by price">
+                           </form>
+                       </div>
+                   </div>
+               </div>
+               <div class="row">
+                  <div class="column col-33">
+                      <div class="product-holder">
+                          <div class="product-image"><img src="img/product-1.png" alt=""><div class="focus-holder"></div>
+                          <div class="fav-holder"></div></div>
+                          <div class="product-info">
+                             <br><div class="text-block">
+                              <h2>#1 Device Name</h2><br>
+                              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                              <p class="info"><b>TYPE</b>: Laptop</p><br>
+                              <p class="info"><b>SCREEN SIZE:</b> 7 inches</p><br>
+                            </div>                                                        
+                             <div class="f-price-holder">
+                              <p class="price">$599 <sup>25</sup></p>
+                              </div>
+                              <div class="buttons-block">
+                              <button class="details-button">MORE DETAILS</button>
+                              <button class="cart-button">ADD TO CART <div class="cart-block"></div></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="column col-33">
+                         <div class="product-holder">
+                          <div class="product-image"><img src="img/remote.png" alt=""><div class="focus-holder"></div>
+                          <div class="fav-holder"></div></div>
+                          <div class="product-info">
+                             <br><div class="text-block">
+                              <h2>#1 Device Name</h2><br>
+                              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                              <p class="info"><b>TYPE:</b> Laptop</p><br>
+                              <p class="info"><b>SCREEN SIZE:</b> 7 inches</p><br>
+                              <p class="info"><b>RAM:</b> 1GB</p>
+                            </div>                                                        
+                             <div class="price-holder">
+                              <p class="price">$1250 <sup>99</sup></p>
+                              </div>
+                              <div class="buttons-block">
+                              <button class="details-button">MORE DETAILS</button>
+                              <button class="cart-button">ADD TO CART <div class="cart-block"></div></button>
+                              </div>
+                          </div>
+                      </div>
+                         </div>
+                  <div class="column col-33">
+                       <div class="product-holder">
+                          <div class="product-image"><img src="img/clock.png" alt=""><div class="focus-holder"></div>
+                          <div class="fav-holder"></div></div>
+                          <div class="product-info">
+                             <br><div class="text-block">
+                              <h2>#1 Device Name</h2><br>
+                              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                              <p class="info"><b>TYPE:</b> Laptop</p><br>
+                              <p class="info"><b>SCREEN SIZE:</b> 7 inches</p><br>
+                              <p class="info"><b>RAM:</b> 1GB</p>
+                            </div>                                                        
+                             <div class="price-holder">
+                              <p class="price">$399 <sup>50</sup></p>
+                              </div>
+                              <div class="buttons-block">
+                              <button class="details-button">MORE DETAILS</button>
+                              <button class="cart-button">ADD TO CART <div class="cart-block"></div></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                   
+               </div>
+                <div class="row">
+                     <div class="column col-33">
+                      <div class="product-holder">
+                          <div class="product-image"><img src="img/laptop.png" alt=""><div class="focus-holder"></div>
+                          <div class="fav-holder"></div></div>
+                          <div class="product-info">
+                             <br><div class="text-block">
+                              <h2>#1 Device Name</h2><br>
+                              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                              <p class="info"><b>TYPE:</b> Laptop</p><br>
+                              <p class="info"><b>SCREEN SIZE:</b> 7 inches</p><br>
+                              <p class="info"><b>RAM:</b> 1GB</p>
+                            </div>                                                        
+                             <div class="price-holder">
+                              <p class="price">$599 <sup>25</sup></p>
+                              </div>
+                              <div class="buttons-block">
+                              <button class="details-button">MORE DETAILS</button>
+                              <button class="cart-button">ADD TO CART <div class="cart-block"></div></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="column col-33">
+                         <div class="product-holder">
+                          <div class="product-image"><img src="img/pr-5.png" alt=""><div class="focus-holder"></div>
+                          <div class="fav-holder"></div></div>
+                          <div class="product-info">
+                             <br><div class="text-block">
+                              <h2>#1 Device Name</h2><br>
+                              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                             <p class="info"><b>TYPE:</b> Laptop</p><br>
+                              <p class="info"><b>SCREEN SIZE:</b> 7 inches</p><br>
+                              <p class="info"><b>RAM:</b> 1GB</p>
+                            </div>                                                        
+                             <div class="price-holder">
+                              <p class="price">$1250 <sup>99</sup></p>
+                              </div>
+                              <div class="buttons-block">
+                              <button class="details-button">MORE DETAILS</button>
+                              <button class="cart-button">ADD TO CART<div class="cart-block"></div></button>
+                              </div>
+                          </div>
+                      </div>
+                         </div>
+                  <div class="column col-33">
+                       <div class="product-holder">
+                          <div class="product-image"><img src="img/phone.png" alt=""><div class="focus-holder"></div>
+                          <div class="fav-holder"></div></div>
+                          <div class="product-info">
+                             <br><div class="text-block">
+                              <h2>#1 Device Name</h2><br>
+                              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                             <p class="info"><b>TYPE:</b> Laptop</p><br>
+                              <p class="info"><b>SCREEN SIZE:</b> 7 inches</p><br>
+                              <p class="info"><b>RAM:</b> 1GB</p>
+                            </div>                                                        
+                             <div class="price-holder">
+                              <p class="price">$399 <sup>50</sup></p>
+                              </div>
+                              <div class="buttons-block">
+                              <button class="details-button">MORE DETAILS</button>
+                              <button class="cart-button">ADD TO CART<div class="cart-block"></div></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                     <div class="column col-33">
+                      <div class="product-holder">
+                          <div class="product-image"><img src="img/icon%20(15).png" alt=""><div class="focus-holder"></div>
+                          <div class="fav-holder"></div></div>
+                          <div class="product-info">
+                             <br><div class="text-block">
+                              <h2>#1 Device Name</h2><br>
+                              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                              <p class="info"><b>TYPE:</b> Laptop</p><br>
+                              <p class="info"><b>SCREEN SIZE:</b> 7 inches</p><br>
+                              <p class="info"><b>RAM:</b> 1GB</p>
+                            </div>                                                        
+                             <div class="price-holder">
+                              <p class="price">$599 <sup>25</sup></p>
+                              </div>
+                              <div class="buttons-block">
+                              <button class="details-button">MORE DETAILS</button>
+                              <button class="cart-button">ADD TO CART<div class="cart-block"></div></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="column col-33">
+                         <div class="product-holder">
+                          <div class="product-image"><img src="img/remote.png" alt=""><div class="focus-holder"></div>
+                          <div class="fav-holder"></div></div>
+                          <div class="product-info">
+                             <br><div class="text-block">
+                              <h2>#1 Device Name</h2><br>
+                              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                             <p class="info"><b>TYPE:</b> Laptop</p><br>
+                              <p class="info"><b>SCREEN SIZE:</b> 7 inches</p><br>
+                              <p class="info"><b>RAM:</b> 1GB</p>
+                            </div>                                                        
+                             <div class="price-holder">
+                              <p class="price">$1250 <sup>99</sup></p>
+                              </div>
+                              <div class="buttons-block">
+                              <button class="details-button">MORE DETAILS</button>
+                              <button class="cart-button">ADD TO CART<div class="cart-block"></div></button>
+                              </div>
+                          </div>
+                      </div>
+                         </div>
+                  <div class="column col-33">
+                       <div class="product-holder">
+                          <div class="product-image"><img src="img/clock.png" alt=""><div class="focus-holder"></div>
+                          <div class="fav-holder"></div></div>
+                          <div class="product-info">
+                             <br><div class="text-block">
+                              <h2>#1 Device Name</h2><br>
+                              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+                             <p class="info"><b>TYPE:</b> Laptop</p><br>
+                              <p class="info"><b>SCREEN SIZE:</b> 7 inches</p><br>
+                              <p class="info"><b>RAM:</b> 1GB</p>
+                            </div>                                                        
+                             <div class="price-holder">
+                              <p class="price">$399 <sup>50</sup></p>
+                              </div>
+                              <div class="buttons-block">
+                              <button class="details-button">MORE DETAILS</button>
+                              <button class="cart-button">ADD TO CART<div class="cart-block"></div></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                   <div class="load">Load more...</div>
+               </div>
+               
+           </div>
+           
+       </section>
+       
+    </div>
+   </main>
    <script src="script.js"></script>
 </body>
 </html>
