@@ -602,3 +602,17 @@ font-weight: 300;
 .info{
     margin-top: 16px;
 }
+footer{
+    text-align: center;
+    background-color: 
+}
+.copyright-holder{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: rgba(255, 255, 255, 0.8);
+
+}
+.copyright-holder p{
+    font-size: 21px;
+    color: #2c71b8;
+}
