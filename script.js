@@ -35,7 +35,7 @@ for(i=0;i<submenu.length; i++){
     addClass(submenu[i]);
     removeClass(submenu[i]);
 }
-//можно было бы в цикле привязать событие к функции и без аргументов, а через this типа как тут li[i].addEventListener('click', addSign);
+//можно было бы в цикле привязать событие к функции и без аргументов, а через this типа как тут li[i].addEventListener('click', addSign) ну или не ивет лисенер, не важно, ф-я теряла контекст, нужно было это исправить и все
 function addClass(submenuItem){
     submenuItem.onmouseover = function() {
          submenuItem.parentElement.children[0].classList.add("color-blue");
@@ -56,5 +56,5 @@ for (k=0; k<favs.length; k++){
   favs[k].addEventListener("click", changeColor);
 }
 function changeColor(){
-  this.classList.toggle("color-blue");
+  this.classList.toggle("fav-blue");
 }
