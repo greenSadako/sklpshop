@@ -50,11 +50,33 @@ function removeClass(submenuItem){
     }
 }
 
-//classList.toggle!
+
 var favs = document.getElementsByClassName("fav-holder");
 for (k=0; k<favs.length; k++){
   favs[k].addEventListener("click", changeColor);
 }
 function changeColor(){
   this.classList.toggle("fav-blue");
+}
+
+var slide = document.getElementById('slide');
+var arrowLeft = document.getElementById("arrow-left");
+var arrowRight = document.getElementById("arrow-right");
+var index = 1;
+arrowRight.onclick = function(){
+    index++;
+    showSlide();
+}
+arrowLeft.onclick = function(){
+    index--;
+    showSlide();
+}
+function showSlide(){
+    if(index>4){
+        index = 1;
+    }
+    else if(index<1){
+        index=4;
+    }
+    slide.innerHTML =index;
 }

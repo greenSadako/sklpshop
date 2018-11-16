@@ -537,3 +537,57 @@ font-size: 21px;
     background-position: center;
     background-repeat: no-repeat;
 }
+.slider{
+    text-align: center;
+    background-color: rgba(35, 90, 147, .7);
+}
+/*
+.slider-holder{
+    margin: 100px auto 0 auto;
+}
+.slider-holder>p{
+    font-size: 50px;
+    display: inline-block;
+}
+.slider-holder>p>i{
+    font-size: 50px;
+    color: white;
+}*/
+.col-10{
+    width: 84%;
+    
+}
+.slider-holder{
+    text-align: center;
+}
+.col-1{
+    width: 8%;
+}
+.col-1>div>p>i{
+    font-size: 80px;
+    color: white;
+    
+}
+.arrow{
+    margin-top: 180px;
+}
+#slide{
+    font-size: 100px;
+    font-weight: 300;
+   
+}
+.slider-holder{
+    margin-top: 155px;
+}
+.square{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-top: 110px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid white;
+}
+.white{
+    background-color: white;
+}
