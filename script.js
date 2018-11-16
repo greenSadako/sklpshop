@@ -59,24 +59,29 @@ function changeColor(){
   this.classList.toggle("fav-blue");
 }
 
-var slide = document.getElementById('slide');
-var arrowLeft = document.getElementById("arrow-left");
+var squares = document.getElementsByClassName("square");
 var arrowRight = document.getElementById("arrow-right");
+var arrowLeft = document.getElementById("arrow-left");
 var index = 1;
-arrowRight.onclick = function(){
-    index++;
-    showSlide();
-}
+var slide = document.getElementById('slide');
 arrowLeft.onclick = function(){
     index--;
-    showSlide();
+    changeSlide();
+};
+arrowRight.onclick = function(){
+    index++;
+    changeSlide();
 }
-function showSlide(){
-    if(index>4){
+function changeSlide(){
+    if(index<1){
+        index= 4;
+    }
+    else if(index>4){
         index = 1;
     }
-    else if(index<1){
-        index=4;
+    for (var i = 0; i<squares.length; i++){
+        squares[i].classList.remove("white");
     }
-    slide.innerHTML =index;
+   slide.innerHTML = "Slide #"+index;
+    squares[index-1].classList.add("white");
 }
