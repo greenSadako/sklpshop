@@ -13,7 +13,7 @@ header{
     padding: 25px 0;
 }
 .wrapper{
-    width: 1176px;
+    width: 1170px;
     margin: 0 auto;
     
 }
@@ -221,6 +221,7 @@ header{
 .path{
     float: left;
     padding-left: 30px;
+    cursor: pointer;
    
 }
 h1{
@@ -356,6 +357,7 @@ button{
     color: white;
     border: 1px solid white;
     cursor: pointer;
+    transition: .5s;
     
 }
 .details-button{
@@ -367,6 +369,9 @@ button{
     position: relative;
     padding-right: 40px;
     background: rgba(208,208,208,.2);
+}
+.cart-button:hover>div{
+    background-image: url(basket-icon.png);
 }
 .cart-block{
     position: absolute;
@@ -474,6 +479,7 @@ sup {
     text-align: center;
     font-size: 36px;
     margin-bottom: 90px;
+    cursor: pointer;
 }
 
 .checkbox-form{
@@ -615,4 +621,9 @@ footer{
 .copyright-holder p{
     font-size: 21px;
     color: #2c71b8;
+}
+button:hover{
+    background-color: white;
+    color: #2c71b8;
+    transform: scale(1.1);
 }
